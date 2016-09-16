@@ -1,0 +1,3 @@
+name = "Liang Xilin"
+
+print ("my name is:" , name)
