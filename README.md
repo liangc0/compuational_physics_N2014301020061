@@ -3,7 +3,7 @@
 
 # Homework list
 
-#### [homework 02](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Exercise_03:All%20levels)
+#### [homework 02](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Homework%202)
 
 #### [Exercise_04:Chapter 1 problem 1.5: The decay of two kinds of pacticles](https://github.com/liangc0/compuational_physics_N2014301020061/commit/5353832b27cab7d184602e0c4954021313e651a6)
 
