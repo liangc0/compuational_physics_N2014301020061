@@ -1,3 +1,17 @@
 name = "Liang Xilin"
 
 print ("my name is:" , name)
+
+a1 = "#   #   #   #   # ##"
+print (a1）
+a2 = "#   #  ###  ## #  #  ##"
+print（a2）
+a3 = "### # #   # # #   #### #"
+print（a3）
+
+b1 = "# # # #   # #   #"
+print (b1)
+b2 = " #  # #   # ## #"
+print （b2)
+b3 = "# # # ### # # #"
+print (b3)
