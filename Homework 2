@@ -1,3 +1,5 @@
+# homework 02: my name
+
 name = "Liang Xilin"
 
 print ("my name is:" , name)
