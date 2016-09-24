@@ -5,7 +5,7 @@
 
 #### [homework 02](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Homework%202)
 
-#### [Exercise_04:Chapter 1 problem 1.5: The decay of two kinds of pacticles](https://github.com/liangc0/compuational_physics_N2014301020061/commit/5353832b27cab7d184602e0c4954021313e651a6)
+#### [Week 03:move my name](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Week%2003:move%20my%20name)
 
 #### [Exercise_05:Chapter 1 problem 1.6:Population growth](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Exercise_05:Chapter%201%20problem%201.6:Population%20growth)
 
