@@ -13,8 +13,31 @@ print （b2)
 b3 = "# # # ### # # #"
 print (b3)
 
-import (os)
+import os
 i = os.system('cls')
 
-n = input ("Please enter the number of the blank space: ")
+a1 = "#   #   #   #   # ##"
+a2 = "#   #  ###  ## #  #  ##"
+a3 = "### # #   # # #   #### #"
+b1 = "# # # #   # #   #"
+b2 = " #  # #   # ## #"
+b3 = "# # # ### # # #"
+
+nn = input ("Please enter the number of the blank space: ")
+n = int(nn)
+
+la1 = len(a1) + n
+la2 = len(a2) + n
+la3 = len(a3) + n
+lb1 = len(b1) + n
+lb2 = len(b2) + n
+lb3 = len(b3) + n
+
+print (a1.rjust(la1))
+print (a2.rjust(la2))
+print (a3.rjust(la3))
+print (" ")
+print (b1.rjust(lb1))
+print (b2.rjust(lb2))
+print (b3.rjust(lb3))
 
