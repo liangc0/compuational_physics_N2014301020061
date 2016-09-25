@@ -4,9 +4,17 @@ i = os.system('cls')
 a1 = "#   #   #   #   # ##    "
 a2 = "#   #  ###  ## #  #  ## "
 a3 = "### # #   # # #   #### #"
+
 b1 = "# # # #   # #   #       "
 b2 = " #  # #   # ## #        "
 b3 = "# # # ### # # #         "
+
+la1= len(a1)
+la2= len(a2)
+la3= len(a3)
+lb1= len(b1)
+lb2= len(b2)
+lb3= len(b3)
 
 print (a1.ljust(la1))
 print (a2.ljust(la2))
@@ -17,15 +25,23 @@ print (b2.ljust(lb2))
 print (b3.ljust(lb3))
 
 import os
+import time
+time.sleep(1)
+
+import os
 i = os.system('cls')
 # gyrate 90 degree
 
 l = len(a1)
 
 for j in range(l):
-  s1=b3[j]+b2[j]+b1[j]+" "+a3[j]+a2[j]+a1[j]
-  print (s1)
+   s1=b3[j]+b2[j]+b1[j]+"     "+a3[j]+a2[j]+a1[j]
+   print (s1)
 
+import os
+import time
+time.sleep(1)
+    
 import os
 i = os.system('cls')
 # gyrate 180 degree
@@ -33,19 +49,19 @@ i = os.system('cls')
 s2 = ""
 for achar in b3:
     s2 = achar + s2
-    print(s2)
+print(s2)
 bb3 = s2
 
 s2 = ""
 for achar in b2:
     s2 = achar + s2
-    print(s2)
+print(s2)
 bb2 = s2
 
 s2 = ""
 for achar in b1:
     s2 = achar + s2
-    print(s2)
+print(s2)
 bb1 = s2
 
 print (" ")
@@ -53,20 +69,24 @@ print (" ")
 s2 = ""
 for achar in a3:
     s2 = achar + s2
-    print(s2)
+print(s2)
 aa3 = s2
 
 s2 = ""
-for achar in a22:
+for achar in a2:
     s2 = achar + s2
-    print(s2)
+print(s2)
 aa2 = s2
 
 s2 = ""
 for achar in a1:
     s2 = achar + s2
-    print(s2)
+print(s2)
 aa1 = s2
+
+import os
+import time
+time.sleep(1)
 
 import os
 i = os.system('cls')
@@ -75,5 +95,5 @@ i = os.system('cls')
 l = len(aa1)
 
 for j in range(l):
-  s1=aa1[j]+aa2[j]+aa3[j]+" "+bb1[j]+bb2[j]+bb3[j]
+  s1=aa1[j]+aa2[j]+aa3[j]+"      "+bb1[j]+bb2[j]+bb3[j]
   print (s1)
