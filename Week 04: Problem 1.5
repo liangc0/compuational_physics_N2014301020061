@@ -1,0 +1,61 @@
+# Problem 1.5
+import pylab as pl
+from math import *
+
+class uranium:
+    def __init__(self, number_of_nuclei_A = 100, number_of_nuclei_B = 0, time_constant = 1, time_of_duration = 5, time_step = 0.05):
+        # unit of time is second
+        self.n_uranium_A = [number_of_nuclei_A]
+        self.n_uranium_B = [0]
+        self.eta = [number_of_nuclei_A / 2]
+        self.etb = [0]
+        self.t = [0]
+        self.tau = time_constant
+        self.dt = time_step
+        self.time = time_of_duration
+        self.nsteps = int(time_of_duration // time_step + 1)
+        print("Initial number of nuclei_A ->", number_of_nuclei_A)
+        print("Initial number of nuclei_B ->", number_of_nuclei_B)
+        print("Time constant ->", time_constant)
+        print("time step -> ", time_step)
+        print("total time -> ", time_of_duration)
+        
+    def calculate(self):
+
+        number_of_nuclei_A = 100
+        for i in range(self.nsteps):
+            tmp_A = self.n_uranium_A[i] + (self.n_uranium_B[i] - self.n_uranium_A[i]) / self.tau * self.dt
+            tmp_B = self.n_uranium_B[i] + (self.n_uranium_A[i] - self.n_uranium_B[i]) / self.tau * self.dt
+            temp_A = number_of_nuclei_A / 2 + number_of_nuclei_A / 2 * exp(- (self.t[i] + self.dt) * 2 / self.tau)
+            temp_B = number_of_nuclei_A / 2 - number_of_nuclei_A / 2 * exp(- (self.t[i] + self.dt) * 2 / self.tau)
+            self.eta.append(temp_A)
+            self.etb.append(temp_B)
+            self.n_uranium_A.append(tmp_A)
+            self.n_uranium_B.append(tmp_B)
+            self.t.append(self.t[i] + self.dt)
+            
+    def show_results(self):
+        pl.plot(self.t, self.n_uranium_A, 'r')
+        pl.plot(self.t, self.n_uranium_B, 'b')
+        pl.plot(self.t, self.eta, '*')
+        pl.plot(self.t, self.etb, '*')
+        pl.xlabel('time ($s$)')
+        pl.ylabel('Number of Nuclei')
+        pl.show()
+        
+    def store_results(self):
+        myfile = open('nuclei_data.txt', 'w')
+        for i in range(len(self.t)):
+            print(self.t[i], self.n_uranium_A[i], file = myfile)
+            print(self.t[i], self.n_uranium_B[i], file = myfile)
+            print(self.t[i], self.eta[i], file = myfile)
+            print(self.t[i], self.etb[i], file = myfile)
+        myfile.close()
+
+a = uranium()        
+a.calculate()
+a.show_results()
+a.store_results()
+
+
+
