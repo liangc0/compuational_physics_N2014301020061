@@ -1,0 +1,45 @@
+import pylab as pl
+class bicycle:
+     def __init__(self, power=181, mass=70, time_step=0.1,\
+                 total_time=20, initial_velocity=1, friction=0.175):
+        self.v_front = [initial_velocity]
+        self.e_front = [0]
+        self.e_mid = [0]
+        self.t = [0]
+        self.m = mass
+        self.p = power
+        self.f = friction
+        self.dt = time_step
+        self.time = total_time
+    
+     def run(self):
+        tt = 0
+
+        while(tt < self.time):
+            self.v_front.append(self.v_front[-1] +\
+                          self.dt * self.p / (self.m * self.v_front[-1]) -\
+                          self.f * self.v_front[-1] * self.v_front[-1] * self.dt /(2*self.m ))
+            self.e_front.append(self.e_front[-1] + self.p * self.dt)    
+           
+            self.e_mid.append(self.e_mid[-1]+ (self.p - 0.15* self.f * self.v_front[-1] * self.v_front[-1] * self.v_front[-1]) * self.dt)
+            self.t.append(tt)
+            tt += self.dt
+   
+     def show_results(self):
+        pl.plot(self.t, self.e_front, 'r')
+        pl.plot(self.t, self.e_mid, 'b')
+        pl.xlabel('time ($s$)')
+        pl.ylabel('energy')
+        pl.show()
+        
+     def store_results(self):
+        myfile = open('bicycle.txt', 'w')
+        for i in range(len(self.t)):
+            print(self.t[i], self.e_front[i], file = myfile)
+            print(self.t[i], self.e_mid[i], file = myfile)
+        myfile.close()
+    
+a = bicycle()
+a.run()
+a.show_results()
+a.store_results()
