@@ -16,3 +16,5 @@
 #### [Week 07:Problem 2.10](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Homework%2007%EF%BC%9AProblem%202.10.md)
 
 #### [Week 08:Problem 3.10](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Homework%2008%EF%BC%9AProblem3.10%20.md)
+
+#### [Week 10:Problem 3.18~3.21](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Homework%2010%EF%BC%9AProblem%203.18~3.21.md)
