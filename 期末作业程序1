@@ -1,0 +1,32 @@
+     def run(self):
+
+         for n in range(self.times+1):
+             for i in range(self.nump):
+                 xita = random.uniform(0,2*pi)
+                 x0 = int(self.x[i])
+                 y0 = int(self.y[i])
+                 x1 = (self.x[i]) + 0.01*cos(xita)
+                 y1 = (self.y[i]) + 0.01*sin(xita)
+                 if x1 > self.leng:
+                     x1 = x1 -self.leng
+                 if x1 < 0:
+                     x1 = x1 + self.leng
+                 if y1 > self.leng:
+                     y1 = y1 -self.leng
+                 if y1 < 0:
+                     y1 = y1 + self.leng
+                 self.x[i]= x1
+                 self.y[i]= y1
+                 x2 = int(x1)
+                 y2 = int(y1)
+                 self.a[x0][y0] = self.a[x0][y0]-1
+                 self.a[x2][y2] = self.a[x2][y2]+1
+                 
+             s0 = 0
+             for i in range(self.leng):
+                 for j in range(self.leng):
+                     if self.a[i][j] >0 :
+                         s0 = s0 - (self.a[i][j] / self.nump)*log(self.a[i][j] / self.nump)
+             self.s.append(s0)
+                 
+             self.t.append(n)
