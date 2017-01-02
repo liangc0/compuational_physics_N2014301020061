@@ -28,3 +28,5 @@
 #### [Week 14:Problem 5.4](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Week14%EF%BC%9AProblem%205.4.md)
 
 #### [Week 15:Problem 6.12](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/Week%2015%EF%BC%9AProblem%206.12.md)
+
+#### [Final test](https://github.com/liangc0/compuational_physics_N2014301020061/blob/master/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A%EF%BC%88%E4%B9%A0%E9%A2%987.12%E3%80%817.13%EF%BC%89.md)
